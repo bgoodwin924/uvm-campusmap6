@@ -53,9 +53,9 @@ span{
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a href="#">Home</a>
-  <a href="#">Waterman</a>
-  <a href="#">Davis Center</a>
+  <a href="index.php">Home</a>
+  <a href="waterman.php">Waterman</a>
+  <a href="daviscenter.php">Davis Center</a>
 </div>
 
 
