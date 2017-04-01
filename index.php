@@ -1,114 +1,53 @@
-<!--
-/**
-* Copyright 2017 IBM Corp. All Rights Reserved.
-*
-* Licensed under the Apache License, Version 2.0 (the “License”);
-* you may not use this file except in compliance with the License.
-* You may obtain a copy of the License at
-*
-* https://www.apache.org/licenses/LICENSE-2.0
-*
-* Unless required by applicable law or agreed to in writing, software
-* distributed under the License is distributed on an “AS IS” BASIS,
-* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-* See the License for the specific language governing permissions and
-* limitations under the License.
-*/
--->
-<!DOCTYPE html>
-<html>
+<?php
+include "top.php";
+include "header.php";
+include "nav.php";
+?>
+        <h2>About</h2>
+        <p>New to campus? Lost? Looking for food? Take a photo of the closest building and find out where you are and some cool campus info!</p>
+        <!-- Upload or take photo button -->
+    <script>
+   function previewFile(){
+       var preview = document.querySelector('img'); //selects the query named img
+       var file    = document.querySelector('input[type=file]').files[0]; //sames as here
+       var reader  = new FileReader();
 
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <meta name="description" content="">
-    <meta name="author" content="Jim Conallen">
-    <link rel="icon" href="./images/bluemix_icon.png">
+       reader.onloadend = function () {
+           preview.src = reader.result;
+       }
 
-    <title>PHP MySQL Hackathon Example - Home</title>
+       if (file) {
+           reader.readAsDataURL(file); //reads the data as a URL
+            } else {
+           preview.src = "";
+        }
+    }
 
-    <!-- Bootstrap core CSS -->
-    <link href="./css/bootstrap.min.css" rel="stylesheet">
+  previewFile();  //calls the function named previewFile()
+  </script>
+        <form action="upload.php" method="post" enctype="multipart/form-data" onchange="previewFile()">
+        Select image to upload: 
+        <input type="file" name="fileToUpload"
+            id="fileToUpload"> <br>
+            <img src="images/upload11.png" height="100" alt="Upload an Image"><br>
+            <input type="submit" value="Upload"
+            name="submit">
+    </form>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="./css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+        <div id="uploadButtons">
+        <button type="button">Upload Image</button>
 
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="./js/ie-emulation-modes-warning.js"></script>
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-<body>
-
-
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-    <div class="jumbotron">
-      <div class="container">
-        <h1>PHP, MySQL and Weather, oh my.</h1>
-        <p>
-        This page is based off the <a href="http://getbootstrap.com/examples/jumbotron/">Jumbotron Bootstrap template</a>.
-        It is useful for a big opening splash of a home page.
-        </p>
-      </div>
-    </div>
-
-    <div class="container">
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="col-md-4">
-          <h2>MySQL</h2>
-          <p>
-          This application example uses the MySQLi extension.  By default Bluemix does not automatically 
-          include this extension when deploying PHP applications in Cloud Foundry.  A composer.json file
-          was added to the root folder with the proper json to tell Bluemix to include it when deploying.
-          </p>
-          <p><a class="btn btn-default" href="todos.php" role="button">View database page &raquo;</a></p>
+        <button type="button" onclick="alert('Allow access to camera')">Take Photo</button>
         </div>
-        <div class="col-md-4">
-          <h2>Weather API</h2>
-          <p>
-          This application uses the Weather API to get the current conditions for a specific location (specified
-          by a US zip code).  The app makes a REST call to the weather server and displays only some of the 
-          information on the page. 
-          </p>
-          <p><a class="btn btn-default" href="weather.php" role="button">View current weather &raquo;</a></p>
-       </div>
-      </div>
-
-      <hr>
-
-      <footer>
-        <p>&copy; 2017 IBM Corporation</p>
-        <p>
-        <a target="_blank" href="https://console.ng.bluemix.net/devops/setup/deploy/?repository=https%3A%2F%2Fgithub.com%2Fjconallen%2FPHP-MySQL-Hackathon-Example">
-        <button type="submit" class="btn btn-primary">
-        	<img style="width:20px;height:20px;" src="./images/IBM_Bluemix_logo.svg.png">
-  			Deploy to Bluemix Toolchain
-		</button>
-		</a>
-        </p>
-      </footer>
-    </div> <!-- /container -->
-
-	
-	<!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="./js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="./js/bootstrap.min.js"></script>
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="./js/ie10-viewport-bug-workaround.js"></script>
-  </body>
-</body>
+        <!-- Campus Map -->
+        <!--<figure>
+            <img alt="Map of UVM Campus" src='image/campusmap.jpg'>
+        </figure>-->
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2846.8202743916804!2d-73.19865238432243!3d44.47785660673106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca7a5bbde60cf1%3A0x2df5d83e5a01e9b2!2sUniversity+of+Vermont!5e0!3m2!1sen!2sus!4v1491051272816" 
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        
+        <?php
+        include "footer.php";
+        ?>
+    </body>
 </html>

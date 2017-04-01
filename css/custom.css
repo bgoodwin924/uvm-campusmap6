@@ -1,0 +1,101 @@
+/**/
+
+header{
+    background-color: #92bd3f;
+    padding-bottom: 5px;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    margin-top: 0px;
+}
+
+footer{
+    padding-left: 15%;
+    padding-bottom: 5px;
+}
+body{
+    background-color: #FFFDEA;
+        
+}
+
+h1{
+    padding-left: 10%;
+   color: black;
+   font-size: 30pt;
+}
+/*ORGANIZING CONTENT*/
+h2{
+    padding-left: 15%;
+    padding-top: 8%;
+}
+
+#uploadButtons{
+margin-left: 37%;
+padding:5% 0%;
+}
+
+button:nth-child(even){
+margin-left: 20%;
+}
+
+h3, p{
+    padding-left: 15%;
+}
+
+iframe{ 
+display: block;
+margin: 0 auto; 
+
+}
+form{
+    padding-left: 15%;
+}
+/*FIGURES*/
+figure{
+    padding-left: 15%;
+}
+figure.waterman{
+    max-width: 400px;
+}
+figure.yes{
+   align-content: center;
+}
+figure.header{
+    max-width: 100px;
+    float: left;
+    padding-left: 10px;
+}
+ul.building{
+    padding-left: 15%;
+}
+/*TABLE FORMATTING*/
+table{
+    border:1px solid black;
+    margin-left: 15%;
+}
+th{
+    border: 1px solid black;
+}
+
+td{
+    border: 1px solid black;
+    padding-left: 3px;
+}
+
+/*NAVIGATION BAR*/
+ul.nav{
+    list-style-type: none;
+    margin: 0;
+    width: 10%;
+    background-color: #92bd3f;
+    position: fixed;
+    height: 100%;
+    overflow: auto; 
+    margin-top: 4em;
+    padding-top: 2em;    
+}
+
+li{
+    padding-top: 0.75em;
+}
