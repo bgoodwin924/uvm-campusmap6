@@ -8,13 +8,18 @@ body {
     height: 100%;
     width: 0;
     position: fixed;
-    z-index: 1;
-    top: 30;
+    z-index: 11;
+    top: 0;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 160px;
+}
+
+span{
+    z-index: 10;
+    position: fixed;
 }
 
 .sidenav a {
@@ -73,8 +78,7 @@ function closeNav() {
 
     <ul class='nav'>
         <?php
-<<<<<<< Updated upstream
-=======
+
         /*
         print '<li class="';
 >>>>>>> Stashed changes
@@ -103,7 +107,7 @@ function closeNav() {
         print '<a href="daviscenter.php">Davis Center</a>';
         print '</li>';
         */
->>>>>>> Stashed changes
+
         ?>
     </ul>
 </nav>

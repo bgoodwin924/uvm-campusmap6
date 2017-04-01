@@ -4,11 +4,14 @@ header{
     background-color: #92bd3f;
     padding-bottom: 5px;
     position: fixed;
+    z-index: 9;
     top: 0;
     left:0;
     width: 100%;
     margin-top: 0px;
 }
+
+
 
 footer{
     padding-left: 15%;
