@@ -116,6 +116,7 @@ ul.nav{
     padding-top: 2em;    
 }
 
+<<<<<<< Updated upstream
 
 ul li a, ul li {
     text-align: center;
@@ -140,4 +141,12 @@ ul.building li a, ul.building li{
     margin: 0;
     padding-bottom: 1%;
     list-style-type: none;
+=======
+li{
+    padding-top: 0.75em;
+}
+
+form{
+    padding-left: 15%;
+>>>>>>> Stashed changes
 }
