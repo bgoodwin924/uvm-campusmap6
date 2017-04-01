@@ -14,8 +14,9 @@ header{
 
 
 footer{
-    padding-left: 15%;
     padding-bottom: 5px;
+    padding-top: 5px;
+    margin: 0 auto;
 }
 body{
     background-color: #FFFDEA;
@@ -25,7 +26,7 @@ body{
 }
 
 form{
-margin-left: 40%;
+margin: 3% 0% 0% 20%;
 margin-top: 4%;
 }
 
@@ -41,20 +42,27 @@ color:white;
 }
 /*ORGANIZING CONTENT*/
 h2{
-    padding-left: 15%;
-    padding-top: 8%;
+    text-align: center;
+    padding-top: 10%;
+    
+}
+h3.academicRes{
+    text-align:left;
+    padding-left: 36%;
+}
+div#about{
+    text-align: center;
 }
 
 
-
 h3, p{
-    padding-left: 15%;
+    text-align: center;
 }
 
 iframe{ 
 display: block;
-margin: 2% 0 0 32%; 
-
+margin: 0 auto;
+padding-top: 1%;
 }
 
 #fileToUpload{
@@ -62,11 +70,16 @@ padding: 3% 0 3% 13%;
 
 }
 form img{
-padding:0 0 0 17%
+padding:0 0 0 17%;
 }
 
+form#uploadImg p{
+    text-align: left;
+    padding:0;
+margin: 2% 0% 2% 14%;
+}
 form input[type=submit]{
-margin: 2% 0% 0% 19%;
+margin: 2% 0% 2% 18%;
 padding: 1% 2%;
 }
 
@@ -86,20 +99,25 @@ figure.header{
     padding-left: 10px;
 }
 ul.building{
-    padding-left: 15%;
+    margin-left: 33%;
 }
 /*TABLE FORMATTING*/
 table{
     border:1px solid black;
-    margin-left: 15%;
+    margin: 0 auto;
 }
 th{
     border: 1px solid black;
+}
+td.buildingAbr{
+    text-align:center; 
 }
 
 td{
     border: 1px solid black;
     padding-left: 3px;
+    height: 50px;
+padding: 0 1em;
 }
 
 /*NAVIGATION BAR*/
@@ -119,7 +137,6 @@ ul.nav{
     padding-top: 2em;    
 }
 
-<<<<<<< Updated upstream
 
 ul li a, ul li {
     text-align: center;
@@ -130,7 +147,6 @@ ul li a, ul li {
 margin-bottom: 50px;
 padding: 2px;
 
-
 }
 
 li:hover a {
@@ -138,18 +154,23 @@ li:hover a {
     color: #fff;
 }
 ul.building li a, ul.building li{
-    color: black;
+    color: #006400;
+    font-weight: normal;
     text-align: left;
     font-size: 14pt;
     margin: 0;
     padding-bottom: 1%;
     list-style-type: none;
-=======
+}
+
 li{
     padding-top: 0.75em;
 }
 
+ul.building li:hover a{
+    color: white;
+    background-color: #006400;
+}
 form{
     padding-left: 15%;
->>>>>>> Stashed changes
 }

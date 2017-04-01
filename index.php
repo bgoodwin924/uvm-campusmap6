@@ -4,9 +4,12 @@ include "nav.php";
 include "header.php";
 
 ?>
+<div id ="about">
         <h2>About</h2>
         <p>New to campus? Lost? Looking for food? Take a photo of the closest building and find out where you are and some cool campus info!</p>
+</div>
         <!-- Upload or take photo button -->
+        
     <script>
    function previewFile(){
        var preview = document.querySelector('img'); //selects the query named img
@@ -26,7 +29,7 @@ include "header.php";
 
   previewFile();  //calls the function named previewFile()
   </script>
-        <form action="upload.php" method="post" enctype="multipart/form-data" onchange="previewFile()">
+        <form  id = "uploadImg" action="upload.php" method="post" enctype="multipart/form-data" onchange="previewFile()">
             <p>Select image to upload:</p> 
         <input type="file" name="fileToUpload"
             id="fileToUpload"> <br>

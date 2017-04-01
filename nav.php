@@ -11,7 +11,7 @@ body {
     z-index: 11;
     top: 0;
     left: 0;
-    background-color: #111;
+    background-color: #e9c893;
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 160px;
@@ -20,13 +20,14 @@ body {
 span{
     z-index: 10;
     position: fixed;
+    color: #fff;
 }
 
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
     font-size: 25px;
-    color: #818181;
+    color: #192C33;
     display: block;
     transition: 0.3s
 }
@@ -42,6 +43,10 @@ span{
     font-size: 36px;
     margin-left: 50px;
 }
+#mySidenav a{
+    margin-bottom: 10%;
+}
+
 
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 25px;}

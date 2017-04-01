@@ -45,10 +45,10 @@ include "nav.php";
             </tr>
             <tr>
                 <td>Will appear on your schedule as</td>
-                <td></td>
+                <td class ="buildingAbr"></td>
             </tr>      
         </table>
-        <h3>Academic Resources</h3>
+        <h3 class="academicRes">Academic Resources</h3>
         <ul class='building'>
             <li>
                 <a href="https://uvmbookstore.uvm.edu/">Campus Bookstore</a>

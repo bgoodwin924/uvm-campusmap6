@@ -52,10 +52,10 @@ include "nav.php";
             </tr>
             <tr>
                 <td>Will appear on your schedule as</td>
-                <td>WATERM</td>
+                <td class="buildingAbr">WATERM</td>
             </tr>      
         </table>
-        <h3>Academic Resources</h3>
+        <h3 class="academicRes">Academic Resources</h3>
         <ul class='building'>
             <li>
                 <a href="http://www.uvm.edu/studentfinancialservices">Financial Aid</a>
