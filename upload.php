@@ -90,6 +90,6 @@ $file_path='uploads/upload.jpg';
         $name2=preg_replace("/[^a-zA-Z]+/", "", $name);
         header("Location:waterman.php");
     }else{
-        print('we do not recognize this building');
+        header("Location:redirect.php");
     }
 ?>
