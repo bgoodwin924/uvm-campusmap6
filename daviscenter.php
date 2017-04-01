@@ -7,9 +7,7 @@ include "nav.php";
         <h3>Address</h3>
         <p>590 Main St</p>
         <!-- Campus Map -->
-        <figure>
-            <img alt="View of the Davis Center" src='image/davis.jpg'width="500px">
-        </figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1423.46475152055!2d-73.19674830412643!3d44.47561776299479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca7a5b307a469d%3A0xfb2f2120336b4009!2sDudley+H.+Davis+Center!5e0!3m2!1sen!2sus!4v1491077678148" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <h3>What's Inside?</h3>
         <table>
             <tr>

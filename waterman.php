@@ -7,9 +7,7 @@ include "nav.php";
         <h3>Address</h3>
         <p>85 South Prospect Street</p>
         <!-- Campus Map -->
-        <figure class='waterman'>
-            <img alt="Front view of Waterman building" src='image/waterman.JPG' width="500px">
-        </figure>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1423.4018166201458!2d-73.20107927714015!3d44.4781976901694!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cca7a5b94617d73%3A0xdc357b591507e66d!2sUVM+Waterman+Building!5e0!3m2!1sen!2sus!4v1491077442061" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
         <h3>What's Inside?</h3>
         <table>
             <tr>
