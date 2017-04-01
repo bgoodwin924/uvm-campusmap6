@@ -84,7 +84,7 @@ $file_path='uploads/upload.jpg';
 
     
     $score=($server_output['similar_images'][0]['score']);
-    if ($score>0.65){
+    if ($score>0.70){
         $name=($server_output['similar_images'][0]['image_file']);
         $name=substr($name, 0,-3);
         $name2=preg_replace("/[^a-zA-Z]+/", "", $name);
