@@ -40,25 +40,13 @@ h2{
 
 
 
-#uploadButtons{
-margin-left: 39%;
-padding: 3% 0% 3% 0% ;
-}
-
-#uploadButtons button[type=button]{
-padding: 1% 2%;
-}
-#uploadButtons button:nth-child(even){
-    margin-left:20%;
-}
-
 h3, p{
     padding-left: 15%;
 }
 
 iframe{ 
 display: block;
-margin: 0 0 0 32%; 
+margin: 2% 0 0 32%; 
 
 }
 

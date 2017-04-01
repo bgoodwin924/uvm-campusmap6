@@ -33,12 +33,6 @@ include "nav.php";
             <input type="submit" value="Upload"
             name="submit">
     </form>
-
-        <div id="uploadButtons">
-        <button type="button">Upload Image</button>
-
-        <button type="button" onclick="alert('Allow access to camera')">Take Photo</button>
-        </div>
         <!-- Campus Map -->
         <!--<figure>
             <img alt="Map of UVM Campus" src='image/campusmap.jpg'>
