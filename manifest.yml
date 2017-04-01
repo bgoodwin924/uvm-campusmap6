@@ -7,5 +7,3 @@ applications:
   name: PHP MySQL Hackathon Example
   disk_quota: 1024M
   services:
-    - ClearDB-ph
-    - Weather Company Data-ph
