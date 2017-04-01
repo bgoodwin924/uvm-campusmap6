@@ -53,6 +53,20 @@ include "nav.php";
             <li>
                 <a href="https://uvmbookstore.uvm.edu/">Campus Bookstore</a>
             </li>
+            <li>
+                <a href="http://www.uvm.edu/~davis/?Page=re_advisingcenter.php&SM=menu_errands.html">Advising Center</a>
+            </li>
+            <li>
+                <a href="http://www.uvm.edu/~davis/?Page=re_careercenter.php&SM=menu_errands.html">The Career Center</a>
+            </li>
+            <li>
+                <a href="http://www.uvm.edu/~davis/?Page=re_thehub.php&SM=menu_errands.html">The Hub</a>
+            </li>
+            <li>
+                <a href="http://www.uvm.edu/~davis/?Page=re_livingwell.php&SM=menu_errands.html">Living Well</a>
+            </li>
+            
+            
         </ul>
         
         <?php
